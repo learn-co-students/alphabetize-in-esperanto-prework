@@ -1,7 +1,7 @@
 ---
 tags: collections, iteration, hashes, arrays, sorting
 languages: ruby
-resources: 1
+resources: 2
 ---
 
 # Alphabetize in Esperanto
@@ -19,6 +19,7 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 ```
 
 ## Example
+
 For instance, the array below:
 
 ```ruby
@@ -30,5 +31,8 @@ Should become:
 ["bonan matenon", "ĉu vi parolas esperanton", "mi amas vin", "pacon"]
 ```
 
+If you'd like to know what these phrases or words translate to, translate them on [Google Translate](https://translate.google.com/#eo/en/).
+
 ## Resources
 * [Wikipedia](http://en.wikipedia.org/) - [Esperanto Alphabet](http://en.wikipedia.org/wiki/Esperanto#Alphabet)
+* [Google Translate](https://translate.google.com/) - [Esperanto to English](https://translate.google.com/#eo/en/)
