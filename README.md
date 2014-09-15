@@ -22,12 +22,12 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 For instance, the array below:
 
 ```ruby
-["Mi amas vin", "Bonan matenon", "Pacon!", "Ĉu vi parolas Esperanton?"]
+["Mi amas vin", "Bonan matenon", "Pacon", "Ĉu vi parolas Esperanton"]
 ```
 Should become:
 
 ```ruby
-["Bonan matenon", "Ĉu vi parolas Esperanton?", "Mi amas vin", "Pacon!"]
+["Bonan matenon", "Ĉu vi parolas Esperanton", "Mi amas vin", "Pacon"]
 ```
 
 ## Resources
