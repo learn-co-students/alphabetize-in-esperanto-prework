@@ -1,5 +1,5 @@
 ---
-tags: collections, iteration, hashes, arrays, sorting
+tags: collections, iteration, hashes, arrays, sorting, bonus
 languages: ruby
 resources: 2
 ---
