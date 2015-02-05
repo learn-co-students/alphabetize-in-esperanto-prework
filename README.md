@@ -33,6 +33,12 @@ Should become:
 
 If you'd like to know what these phrases or words translate to, translate them on [Google Translate](https://translate.google.com/#eo/en/).
 
+## Hints
+
+Think about how you would do this using the [sort_by](http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-sort_by) method.
+
 ## Resources
+
+* [Ruby's sort_by Method](http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-sort_by)
 * [Wikipedia](http://en.wikipedia.org/) - [Esperanto Alphabet](http://en.wikipedia.org/wiki/Esperanto#Alphabet)
 * [Google Translate](https://translate.google.com/) - [Esperanto to English](https://translate.google.com/#eo/en/)
