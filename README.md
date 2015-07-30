@@ -1,8 +1,4 @@
----
-tags: collections, iteration, hashes, arrays, sorting, bonus
-languages: ruby
-resources: 2
----
+
 
 # Alphabetize in Esperanto
 
