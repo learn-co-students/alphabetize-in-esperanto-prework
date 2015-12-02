@@ -38,3 +38,5 @@ Think about how you would do this using the [sort_by](http://ruby-doc.org/core-2
 * [Ruby's sort_by Method](http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-sort_by)
 * [Wikipedia](http://en.wikipedia.org/) - [Esperanto Alphabet](http://en.wikipedia.org/wiki/Esperanto#Alphabet)
 * [Google Translate](https://translate.google.com/) - [Esperanto to English](https://translate.google.com/#eo/en/)
+
+<a href='https://learn.co/lessons/alphabetize-in-esperanto' data-visibility='hidden'>View this lesson on Learn.co</a>
