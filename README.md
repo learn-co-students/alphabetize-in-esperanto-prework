@@ -39,4 +39,4 @@ Think about how you would do this using the [sort_by](http://ruby-doc.org/core-2
 * [Wikipedia](http://en.wikipedia.org/) - [Esperanto Alphabet](http://en.wikipedia.org/wiki/Esperanto#Alphabet)
 * [Google Translate](https://translate.google.com/) - [Esperanto to English](https://translate.google.com/#eo/en/)
 
-<a href='https://learn.co/lessons/alphabetize-in-esperanto' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/alphabetize-in-esperanto' title='Alphabetize in Esperanto'>Alphabetize in Esperanto</a> on Learn.co and start learning to code for free.</p>
