@@ -7,11 +7,8 @@ def alphabetize(arr)
     ordered[char.to_s] = index
   end
   arr.sort_by do |phrase|
-    [
-    ordered[phrase[0]],
-    ordered[phrase[1]],
-    ordered[phrase[6]],
-    ordered[phrase[5]]
-    ]
+    phrase.split("").map do |char|
+      ordered[char]
+    end
   end
 end
