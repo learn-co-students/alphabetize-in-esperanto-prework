@@ -1,15 +1,7 @@
 def alphabetize(arr)
-
-  #arr.sort_by do |phrase|
-  #  get_esp_index(phrase, 5)
-  #  get_esp_index(phrase, 1)
-  #  get_esp_index(phrase, 0)
-  #end
-
   arr.sort do |phrase1, phrase2|
     helper(phrase1, phrase2)
   end
-
 end
 
 def get_esp_index(word, index)
