@@ -1,6 +1,5 @@
+ESPERANTO_ALPHABET = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 def alphabetize(arr)
-  # code here
-  esp_alphabet = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  regular_alphabet = "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\"
-  arr.sort_by{|word| word.tr(esp_alphabet, regular_alphabet)}
+  arr.sort_by { |a| a.split("").map{ |char| ESPERANTO_ALPHABET.index(char) } }
 end
