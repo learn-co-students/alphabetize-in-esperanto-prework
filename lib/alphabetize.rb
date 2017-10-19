@@ -1,3 +1,6 @@
+require "pry"
+
+ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
-  # code here
+  arr.sort_by { |element| element.split("").collect{ |char| ALPHABET.index(char) } }
 end
