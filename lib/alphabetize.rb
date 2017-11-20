@@ -15,7 +15,7 @@ def alphabetize(arr)
       index1 = 0
       index2 = 0
 
-      #find how deep the comparison needs to go if the don't match
+      #find how deep the comparison needs to go if they don't match
       if first != second
         while first[position] === second[position]
           position += 1
