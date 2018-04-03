@@ -1,3 +1,4 @@
+require 'pry'
 describe "#alphabetize" do
 
   # ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
