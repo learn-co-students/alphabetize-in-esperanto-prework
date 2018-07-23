@@ -1,3 +1,5 @@
 def alphabetize(arr)
-  # code here
+  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  phrases_numeric = []
+  arr.sort_by {|phrase| phrase.split(" ").join.split("").collect {|letter| alphabet.index(letter)}}
 end
