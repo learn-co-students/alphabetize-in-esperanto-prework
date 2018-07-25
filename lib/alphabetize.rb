@@ -1,3 +1,8 @@
 def alphabetize(arr)
-  # code here
+  esp = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by do |word|
+    word.split("").collect do |letter|
+      esp.index(letter)
+    end
+  end
 end
