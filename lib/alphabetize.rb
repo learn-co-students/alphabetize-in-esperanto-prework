@@ -1,7 +1,7 @@
 require 'pry'
 def alphabetize(arr)
   # code here
-  # alphabet = "abcdefghijĵklmnoprstuvz"
+ sorted = []
   alphabet_hash = {
     "a" => 0,
     "b" => 1,
@@ -32,8 +32,14 @@ def alphabetize(arr)
     "v" => 26,
     "z" => 27
   }
-  arr.sort do |x, y|
-  alphabet_hash[x[0]] <=>alphabet_hash[y[0]]
-end 
-  alphabet_hash
+  
+  arr.sort! do |x, y|
+    i = 0
+    until x[i] != y[i]
+    i += 1 
+  end 
+    alphabet_hash[x[i]] <=> alphabet_hash[y[i]]
+  end 
+
+  arr
 end
