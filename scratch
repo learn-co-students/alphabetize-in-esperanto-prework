@@ -15,7 +15,7 @@ def alphabetize(arr)
     sub_array_of_characters = string.split("")
     sub_array_of_characters.each_with_index do |character, index| # So switching from arr.each to arr.collect worked only when I did NOT change sub_array_of_characters.each_with_index to sub_array_of_characters.collect_with_index.
       if ESPERANTO_ALPHABET.include?(character)
-      sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character) # And merely writing ESPERANTO_ALPHABET.index(character) on this line, didn't work either.  I suspect that's because this sub-loop is each_with_index rather than collect-with_index...  Nor, btw, did it work to simply write      character = ESPERANTO_ALPHABET.index(character).
+        sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character) # And merely writing ESPERANTO_ALPHABET.index(character) on this line, didn't work either.  I suspect that's because this sub-loop is each_with_index rather than collect-with_index...  Nor, btw, did it work to simply write      character = ESPERANTO_ALPHABET.index(character).
       end
     end   
  #   new_array << sub_array_of_characters
