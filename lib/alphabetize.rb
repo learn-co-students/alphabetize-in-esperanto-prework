@@ -1,12 +1,17 @@
 require"pry"
 def alphabetize(arr)
   arr.each do |string|
+# binding.pry
     sub_array_of_characters = string.split("")
-    sub_array_of_characters.each_with_index do |character, index|
+#  binding.pry
+    # Each # string within the array is now a sub-array of characters.
+   sub_array_of_characterstring.each_with_index do |character, index|
+# binding.pry
       if ESPERANTO_ALPHABET.include?(character)
         sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
       end 
       sub_array_of_characters.sort 
+binding.pry
     end   
 # binding.pry
   end 
