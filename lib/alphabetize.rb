@@ -12,15 +12,18 @@ def alphabetize(arr)
     end   
     new_array << sub_array_of_characters
   end
-
-  final_array = new_array.sort.collect do |sub_array|
- binding.pry # Everything is ay-OK.
-#    sub_array.collect do |element|
-#      if element != " "
-#      element = ESPERANTO_ALPHABET[element]
-#      binding.pry
-#      end
-#    end 
   
-#  final_array
+  sorted_new_array = new_array.sort
+  g = sorted_new_array.collect do |sub_array|
+# binding.pry # Everything is ay-OK.
+    sub_array.collect do |element|
+      if element != " "
+        element = ESPERANTO_ALPHABET[element]
+      else
+        element = element
+      end 
+      
+    end 
+  end 
+  g.collect { |sub_array| sub_array.join }
 end
