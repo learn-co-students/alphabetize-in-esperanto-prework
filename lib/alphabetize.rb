@@ -1,19 +1,19 @@
 require"pry"
+ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
+  esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.each do |string|
-# binding.pry
     sub_array_of_characters = string.split("")
-#  binding.pry
-    # Each # string within the array is now a sub-array of characters.
-   sub_array_of_characterstring.each_with_index do |character, index|
-# binding.pry
+# binding.pry # OK
+    sub_array_of_characters.each_with_index do |character, index|
+# binding.pry # OK 
       if ESPERANTO_ALPHABET.include?(character)
         sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
       end 
       sub_array_of_characters.sort 
-binding.pry
+
     end   
-# binding.pry
+ 
   end 
 end 
 
