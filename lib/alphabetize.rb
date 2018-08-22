@@ -12,7 +12,7 @@ def alphabetize(arr)
     new_array << sub_array_of_characters
   end
   
-  final_array = []
+
   sorted_new_array = new_array.sort
   sorted_new_array.each do |sub_array|
 # binding.pry # Everything is ay-OK.
@@ -21,8 +21,8 @@ def alphabetize(arr)
       sub_array[index] = ESPERANTO_ALPHABET[index]
       end
     end 
-    final_array = sorted_new_array
-    
+    sorted_new_array.join(" ")
+binding.pry 
   end
-  final_array
+  
 end 
