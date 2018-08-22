@@ -26,9 +26,11 @@ def alphabetize(arr)
 # binding.pry # Everything is ay-OK.
     sub_array.collect do |element|
       if element != " "
-        element = ESPERANTO_ALPHABET[element]
+#        element = ESPERANTO_ALPHABET[element]
+         ESPERANTO_ALPHABET[element]
       else
-        element = element
+#        element = element
+         element
       end 
 #     sub_array.join  #I think this line didn't work because this SUB_ARRAY.collect sub-loop was wroking on each ELEMENT of each SUB_ARRAY; and here, right after having re-converted the ELEMENTS back into letters, you're altering the (pre-converted)SUB_ARRAY. 
     end 
