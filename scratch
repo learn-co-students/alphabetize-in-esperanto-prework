@@ -1,7 +1,5 @@
-require"pry"
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
-  final_array = []
   new_array = []
   arr.each do |string|
     sub_array_of_characters = string.split("")
@@ -14,7 +12,7 @@ def alphabetize(arr)
   end
   
   sorted_new_array = new_array.sort
-  g = sorted_new_array.collect do |sub_array|
+  final_array = sorted_new_array.collect do |sub_array|
 # binding.pry # Everything is ay-OK.
     sub_array.collect do |element|
       if element != " "
@@ -22,8 +20,8 @@ def alphabetize(arr)
       else
         element = element
       end 
-      
+ # Why didn't it work out when i was calling .join on each sub_array on this line?     
     end 
   end 
-  g.collect { |sub_array| sub_array.join }
+  final_array.collect { |sub_array| sub_array.join }
 end
