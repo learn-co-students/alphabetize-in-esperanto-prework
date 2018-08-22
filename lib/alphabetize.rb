@@ -29,7 +29,7 @@ def alphabetize(arr)
       else
         element = element
       end 
-#     sub_array.join
+#     sub_array.join  #I think this line didn't work because this SUB_ARRAY.collect sub-loop was wroking on each ELEMENT of each SUB_ARRAY; and here, right after having re-converted the ELEMENTS back into letters, you're altering the (pre-converted)SUB_ARRAY. 
     end 
   end 
   final_array.collect { |sub_array| sub_array.join }
