@@ -4,8 +4,10 @@ def alphabetize(arr)
     sub_array_of_characters = string.split("")
     sub_array_of_characters.each_with_index do |character, index|
       if ESPERANTO_ALPHABET.include?(character)
-        sub_array_of_index_nums = sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
-        
+        sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
+      end 
+      sub_array_of_characters.sort 
+    end   
 # binding.pry
   end 
 end 
