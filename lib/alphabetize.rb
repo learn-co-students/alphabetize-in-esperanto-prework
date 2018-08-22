@@ -11,12 +11,12 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
 #  new_array = []
 #  arr.each do |string|
-    new_array = arr.collect do |string|
-      sub_array_of_characters = string.split("")
-      sub_array_of_characters.each_with_index do |character, index| # So switching from arr.each to arr.collect worked only when I did NOT change sub_array_of_characters.each_with_index to sub_array_of_characters.collect_with_index.
+  new_array = arr.collect do |string|
+    sub_array_of_characters = string.split("")
+    sub_array_of_characters.each_with_index do |character, index| # So switching from arr.each to arr.collect worked only when I did NOT change sub_array_of_characters.each_with_index to sub_array_of_characters.collect_with_index.
       if ESPERANTO_ALPHABET.include?(character)
         sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
-      end
+       end
     end   
  #   new_array << sub_array_of_characters
   end
