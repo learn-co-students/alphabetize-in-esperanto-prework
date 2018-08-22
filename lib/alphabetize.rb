@@ -20,7 +20,7 @@ def alphabetize(arr)
       else
         element = element
       end 
- # Why didn't it work out when i was calling .join on each sub_array on this line?     
+#     sub_array.join
     end 
   end 
   final_array.collect { |sub_array| sub_array.join }
