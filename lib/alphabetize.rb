@@ -15,7 +15,7 @@ def alphabetize(arr)
     sub_array_of_characters = string.split("")
     sub_array_of_characters.each_with_index do |character, index| # So switching from arr.each to arr.collect worked only when I did NOT change sub_array_of_characters.each_with_index to sub_array_of_characters.collect_with_index.
       if ESPERANTO_ALPHABET.include?(character)
-        sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character)
+        sub_array_of_characters[index] = ESPERANTO_ALPHABET.index(character) # And merely writing ESPERANTO_ALPHABET.index(character) on this line, didn't work either.  I suspect that's because this sub-loop is each_with_index rather than collect-with_index.
        end
     end   
  #   new_array << sub_array_of_characters
@@ -23,7 +23,6 @@ def alphabetize(arr)
   
   sorted_new_array = new_array.sort
   final_array = sorted_new_array.collect do |sub_array|
-# binding.pry # Everything is ay-OK.
     sub_array.collect do |element|
       if element != " "
 #        element = ESPERANTO_ALPHABET[element]
@@ -32,7 +31,7 @@ def alphabetize(arr)
 #        element = element
          element
       end 
-#     sub_array.join  #I think this line didn't work because this SUB_ARRAY.collect sub-loop was wroking on each ELEMENT of each SUB_ARRAY; and here, right after having re-converted the ELEMENTS back into letters, you're altering the (pre-converted)SUB_ARRAY. 
+#     sub_array.join  #I think this line didn't work because this SUB_ARRAY.collect sub-loop was wroking on each ELEMENT of each SUB_ARRAY; and here, right after having re-converted the ELEMENTS back into letters, I was trying to alter the (pre-converted)SUB_ARRAY WITHIN this sub-loop. 
     end 
   end 
   final_array.collect { |sub_array| sub_array.join }
