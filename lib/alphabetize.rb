@@ -1,18 +1,25 @@
 def alphabetize(arr)
   # code here
-  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   array2 = []
-  count = 0
+  count = 1
   arr.each do |string|
-    ESPERANTO_ALPHABET.each do |letter|
-      while string[0] != letter
-        count = += 1
+    alphabet.chars.each do |letter|
+      if string[0] == letter
+        array2 << [count, string]
       else
-        array2 << [count,string]
+        count += 1
       end
     end
+    count = 1
   end
-  puts array2
+
+  array3 = []
+  array2.sort.each do |mini_array|
+    array3 << mini_array[1]
+  end
+
+  array3
 
 end
