@@ -1,3 +1,6 @@
 def alphabetize(arr)
-  # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by do |sorter|
+    sorter.split("").collect {|x| esperanto.index(x)}
+  end
 end
