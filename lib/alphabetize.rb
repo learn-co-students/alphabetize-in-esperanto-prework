@@ -1,21 +1,8 @@
 def alphabetize(arr)
-  finished = false
-  i = 0
-  while !finished
-    
-    if i != arr.length - 1
-      str1 = arr[i]
-      str2 = arr[i + 1]
-      if should_be_swaped?(str1, str2)
-        arr[i] = str2
-        arr[i + 1] = str1
-      end
-      i += 1
-    else
-      finished = check_arr(arr)
-      i = 0
+  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ", "i", "j", "ĵ", "k", "l", "m", "n", "o", "p", "r", "s", "ŝ", "t", "u", "ŭ", "v", "z"]
+  arr.sort_by do |word|
+    word.split('').collect do |letter|
+      esperanto_alphabet.index(letter)
     end
-
   end
-  arr
 end
