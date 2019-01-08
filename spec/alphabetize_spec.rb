@@ -13,7 +13,7 @@ describe "#alphabetize" do
     sorted_g_words = ["ĝis revido", "ĝuste"]
     expect(alphabetize(g_words)).to eq(sorted_g_words)
   end
-
+ 
   it 'alphabetizes based on sixth letters' do
     greetings = ["bonan matenon", "bonan vesperon", "bonan nokton"]
     sorted_greetings = ["bonan matenon", "bonan nokton", "bonan vesperon"]
