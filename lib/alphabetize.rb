@@ -1,3 +1,6 @@
 def alphabetize(arr)
-  # code here
+  esperantobet=" abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
+  arr.sort_by {|arr| arr.split('').map{|char|esperantobet.index(char)}}
+
 end
