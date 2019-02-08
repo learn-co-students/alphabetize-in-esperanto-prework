@@ -1,6 +1,6 @@
 describe "#alphabetize" do
 
-  # ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+   ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   it 'alphabetizes based on the first letter' do
     expressions = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
