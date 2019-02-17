@@ -1,3 +1,5 @@
 def alphabetize(arr)
-  # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  english = "@-\\"
+  arr.sort_by{ |string| string.tr(esperanto, english)}
 end
