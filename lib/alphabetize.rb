@@ -1,4 +1,4 @@
-require "pry"
+# require "pry"
 
 def alphabetize(arr)
   esperanton = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
